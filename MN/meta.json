@@ -1,0 +1,57 @@
+{
+ "state": "MN",
+ "source": {
+  "name": "USDA-NRCS Soil Survey Geographic Database (SSURGO): the tables from the national CSV download, the map unit raster from the SQLite SSURGO state download",
+  "file": "SQLite_SSURGO_MN.7z",
+  "url": "https://nrcs.app.box.com/v/soils",
+  "path": "SSURGO/SQLite SSURGO (Geopackages)/States",
+  "tables": "ssurgo_tabular_CONUS_2027.7z (csv_ssurgo), the state's survey areas",
+  "raster": "muraster_10m_MN.tif",
+  "tablesUrl": "https://nrcs.app.box.com/v/soils",
+  "tablesPath": "SSURGO/Open Formatted Files/US/tabular (csv)"
+ },
+ "fy": "FY2027",
+ "published": "2026-10-01",
+ "surveyAreas": 92,
+ "saverest": {
+  "min": "2026-09-06 21:18:56",
+  "max": "2026-09-09 18:10:08"
+ },
+ "counts": {
+  "mapunits": 10762,
+  "mapunitsWithRows": 10762,
+  "components": 43592,
+  "horizons": 137288,
+  "hzRows": 137288
+ },
+ "nullColumns": [
+  "chorizon.esp_r",
+  "chorizon.fragvoltot_r"
+ ],
+ "raster": {
+  "path": "r30/index.json",
+  "resample": "mode",
+  "tiles": 1033,
+  "tileBytes": 45770745,
+  "cells": 242893847,
+  "pixels10m": 2185666432,
+  "sameAs10m": 2049250695,
+  "mapunitsIn10m": 10761,
+  "mapunitsInGrid": 10752,
+  "grid": {
+   "crs": "EPSG:5070",
+   "res": 30,
+   "tile": 512,
+   "x0": -92160,
+   "y0": 2933760,
+   "rows": 43,
+   "cols": 38
+  }
+ },
+ "shards": {
+  "path": "mu/<mukey % 1024>.json",
+  "count": 1024
+ },
+ "built": "2026-11-17T15:04:11Z",
+ "tool": "tools/build_ssurgo.py"
+}
